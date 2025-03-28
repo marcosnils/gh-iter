@@ -28,7 +28,7 @@ func main() {
 	}
 
 	// check if the loop stopped because of an error
-	if err := users.Err(); err != nil {
+	if users.Err() != nil {
 		// something happened :(
 		panic(err)
 	}
